@@ -1,5 +1,5 @@
 import logging
-from telegram.ext import Application, Update
+from telegram.ext import Application
 from bot.handlers import setup_handlers
 from database.models import init_database
 from config import BOT_TOKEN
@@ -22,7 +22,7 @@ def main():
     setup_handlers(application)
     
     # Запуск бота
-    application.run_polling(allowed_updates=Update.ALL_TYPES)
+    application.run_polling(allowed_updates=["message", "callback_query"])
 
 if __name__ == '__main__':
     main()
