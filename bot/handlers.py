@@ -141,10 +141,16 @@ def setup_handlers(application: Application) -> None:
     application.add_handler(MessageHandler(filters.TEXT & filters.Regex('^< Назад$') & ~filters.COMMAND, handle_back))
 
     # Обработчик категорий (текст должен быть ключом в CATEGORIES)
-    application.add_handler(MessageHandler(filters.TEXT & filters.In(CATEGORIES.keys()) & ~filters.COMMAND, handle_category))
+    application.add_handler(MessageHandler(
+        filters.TEXT & filters.Regex(f'^({"|".join(map(str, CATEGORIES.keys()))})$') & ~filters.COMMAND,
+        handle_category
+    ))
 
     # Обработчик товаров (текст должен быть одним из названий товаров)
     if all_product_names: # Добавляем обработчик только если есть товары
-         application.add_handler(MessageHandler(filters.TEXT & filters.In(all_product_names) & ~filters.COMMAND, handle_product))
+        application.add_handler(MessageHandler(
+            filters.TEXT & filters.Regex(f'^({"|".join(map(str, all_product_names))})$') & ~filters.COMMAND,
+            handle_product
+        ))
     
     logging.info("Handlers configured successfully.")
