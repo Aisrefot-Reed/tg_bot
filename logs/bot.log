@@ -1312,3 +1312,15 @@
 2025-04-05 07:15:27,790 - root - INFO - База данных инициализирована успешно.
 2025-04-05 07:16:48,237 - root - INFO - База данных инициализирована успешно.
 2025-04-05 07:17:01,623 - root - INFO - База данных инициализирована успешно.
+2025-04-05 07:22:40,864 - root - INFO - База данных успешно инициализирована
+2025-04-05 07:22:40,891 - root - INFO - Handlers configured with ConversationHandler for orders.
+2025-04-05 07:22:40,891 - root - INFO - Запуск polling...
+2025-04-05 07:22:41,705 - telegram.ext.Application - INFO - Application started
+2025-04-05 07:23:03,846 - root - INFO - User 529437081 starts order process selecting 'Базовые работы'.
+2025-04-05 07:23:10,347 - root - INFO - User 529437081 selected base work: Скетч
+2025-04-05 07:23:18,843 - root - INFO - User 529437081 selected format: Фуллбоди
+2025-04-05 07:23:29,487 - root - INFO - User 529437081 added extra: Дополнительный персонаж
+2025-04-05 07:23:39,524 - root - INFO - User 529437081 finishing extras selection with action: 'Завершить выбор допов'.
+2025-04-05 07:23:39,524 - root - INFO - Order details for user 529437081: Base='Скетч', Format='Фуллбоди', Extras='Дополнительный персонаж'
+2025-04-05 07:23:39,525 - root - ERROR - Ошибка при добавлении заказа в БД: table orders has no column named base_work
+2025-04-05 07:23:39,525 - root - ERROR - Не удалось сохранить заказ в БД для пользователя 529437081.
