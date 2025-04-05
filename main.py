@@ -1,7 +1,7 @@
 import logging
 import os
 from telegram.ext import Application
-from handlers import setup_handlers
+from bot.handlers import setup_handlers
 from database.models import init_database
 from config import BOT_TOKEN
 
