@@ -315,7 +315,7 @@ def setup_handlers(application: Application) -> None:
                 MessageHandler(filters.TEXT & filters.Regex(f"^({'|'.join(CATEGORIES['Форматы персонажей'])})$") & ~filters.COMMAND, select_format)
             ],
             SELECTING_EXTRAS: [
-                MessageHandler(filters.TEXT & filters.In(CATEGORIES["Доп. услуги"]) & ~filters.COMMAND, select_extras),
+                MessageHandler(filters.TEXT & filters.Regex(f"^({'|'.join(CATEGORIES['Доп. услуги'])})$") & ~filters.COMMAND, select_extras),
                 MessageHandler(filters.TEXT & filters.Regex(r'^(Готово \(без доп\. услуг\)|Завершить выбор допов)$') & ~filters.COMMAND, finish_extras),
             ],
         },

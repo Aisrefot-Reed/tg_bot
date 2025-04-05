@@ -1,27 +1,31 @@
+
 import sqlite3
 import logging
-from datetime import datetime
-from config import DATABASE_PATH # Импортируем путь из конфига
+from config import DATABASE_PATH
 
 def init_database():
-    """Инициализирует базу данных и создает таблицу заказов, если её нет."""
+    """Инициализирует базу данных и создает необходимые таблицы."""
+    conn = None
     try:
         conn = sqlite3.connect(DATABASE_PATH)
         cursor = conn.cursor()
+        
+        # Создаем таблицу заказов
         cursor.execute('''
             CREATE TABLE IF NOT EXISTS orders (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 user_id INTEGER NOT NULL,
                 username TEXT,
-                base_work TEXT,
-                character_format TEXT,
-                extras TEXT, -- Храним как строку, разделенную запятыми
-                status TEXT DEFAULT 'new',
-                timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+                base_work TEXT NOT NULL,
+                character_format TEXT NOT NULL,
+                extras TEXT,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
         ''')
+        
         conn.commit()
-        logging.info("База данных инициализирована успешно.")
+        logging.info("База данных успешно инициализирована")
+        
     except sqlite3.Error as e:
         logging.error(f"Ошибка при инициализации БД: {e}")
     finally:
@@ -46,10 +50,8 @@ def add_order(user_id: int, username: str | None, base_work: str, character_form
         logging.info(f"Заказ {order_id} от user_id {user_id} добавлен в БД.")
         return order_id
     except sqlite3.Error as e:
-        logging.error(f"Ошибка при добавлении заказа для user_id {user_id}: {e}")
+        logging.error(f"Ошибка при добавлении заказа в БД: {e}")
         return None
     finally:
         if conn:
             conn.close()
-
-# Добавь другие функции, если нужно (например, для получения заказов)
