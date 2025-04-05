@@ -312,7 +312,7 @@ def setup_handlers(application: Application) -> None:
                 MessageHandler(filters.TEXT & filters.Regex(f'^({"|".join(CATEGORIES["Базовые работы"])})$') & ~filters.COMMAND, select_base_work)
             ],
             SELECTING_FORMAT: [
-                MessageHandler(filters.TEXT & filters.In(CATEGORIES["Форматы персонажей"]) & ~filters.COMMAND, select_format)
+                MessageHandler(filters.TEXT & filters.Regex(f"^({'|'.join(CATEGORIES['Форматы персонажей'])})$") & ~filters.COMMAND, select_format)
             ],
             SELECTING_EXTRAS: [
                 MessageHandler(filters.TEXT & filters.In(CATEGORIES["Доп. услуги"]) & ~filters.COMMAND, select_extras),
