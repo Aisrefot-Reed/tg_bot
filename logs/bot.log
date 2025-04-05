@@ -1295,3 +1295,6 @@
 2025-04-05 06:41:03,330 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7728251431:AAEZ3y5HDcNk7nto1IcHu6rsteCr1vMnd38/getMe "HTTP/1.1 200 OK"
 2025-04-05 06:41:03,521 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7728251431:AAEZ3y5HDcNk7nto1IcHu6rsteCr1vMnd38/deleteWebhook "HTTP/1.1 200 OK"
 2025-04-05 06:41:04,081 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7728251431:AAEZ3y5HDcNk7nto1IcHu6rsteCr1vMnd38/getUpdates "HTTP/1.1 200 OK"
+2025-04-05 07:05:42,460 - root - INFO - Handlers reconfigured successfully (Payment Conditions in Welcome, Payment Methods on button).
+2025-04-05 07:05:42,460 - root - INFO - Запуск polling...
+2025-04-05 07:05:43,238 - telegram.ext.Application - INFO - Application started
