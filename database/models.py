@@ -11,6 +11,7 @@ def init_database():
         cursor = conn.cursor()
         
         # Создаем таблицу заказов
+        cursor.execute('DROP TABLE IF EXISTS orders')
         cursor.execute('''
             CREATE TABLE IF NOT EXISTS orders (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
