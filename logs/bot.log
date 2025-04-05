@@ -1298,3 +1298,14 @@
 2025-04-05 07:05:42,460 - root - INFO - Handlers reconfigured successfully (Payment Conditions in Welcome, Payment Methods on button).
 2025-04-05 07:05:42,460 - root - INFO - Запуск polling...
 2025-04-05 07:05:43,238 - telegram.ext.Application - INFO - Application started
+2025-04-05 07:10:24,407 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-04-05 07:10:24,408 - telegram.ext.Application - INFO - Application.stop() complete
+2025-04-05 07:10:24,409 - root - INFO - Бот остановлен.
+2025-04-05 07:10:26,281 - root - INFO - База данных инициализирована успешно.
+2025-04-05 07:10:26,311 - root - INFO - Handlers reconfigured successfully (Payment Conditions in Welcome, Payment Methods on button).
+2025-04-05 07:10:26,312 - root - INFO - Запуск polling...
+2025-04-05 07:10:27,086 - telegram.ext.Application - INFO - Application started
+2025-04-05 07:11:03,131 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-04-05 07:11:03,132 - telegram.ext.Application - INFO - Application.stop() complete
+2025-04-05 07:11:03,133 - root - INFO - Бот остановлен.
+2025-04-05 07:14:23,842 - root - INFO - База данных инициализирована успешно.
