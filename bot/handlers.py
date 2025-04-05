@@ -309,14 +309,14 @@ def setup_handlers(application: Application) -> None:
         ],
         states={
             SELECTING_BASE: [
-                MessageHandler(filters.TEXT & filters.In(CATEGORIES["Базовые работы"]) & ~filters.COMMAND, select_base_work)
+                MessageHandler(filters.TEXT & filters.Regex(f'^({"|".join(CATEGORIES["Базовые работы"])})$') & ~filters.COMMAND, select_base_work)
             ],
             SELECTING_FORMAT: [
                 MessageHandler(filters.TEXT & filters.In(CATEGORIES["Форматы персонажей"]) & ~filters.COMMAND, select_format)
             ],
             SELECTING_EXTRAS: [
                 MessageHandler(filters.TEXT & filters.In(CATEGORIES["Доп. услуги"]) & ~filters.COMMAND, select_extras),
-                MessageHandler(filters.TEXT & filters.Regex('^(Готово \(без доп\. услуг\)|Завершить выбор допов)$') & ~filters.COMMAND, finish_extras),
+                MessageHandler(filters.TEXT & filters.Regex(r'^(Готово \(без доп\. услуг\)|Завершить выбор допов)$') & ~filters.COMMAND, finish_extras),
             ],
         },
         fallbacks=[
@@ -333,7 +333,7 @@ def setup_handlers(application: Application) -> None:
     application.add_handler(MessageHandler(filters.TEXT & filters.Regex('^Оплата$') & ~filters.COMMAND, handle_payment))
 
     # Добавляем обработчик для нажатия "Доп. услуги" из главного меню
-    application.add_handler(MessageHandler(filters.TEXT & filters.Regex('^Доп\. услуги$') & ~filters.COMMAND, handle_other_categories))
+    application.add_handler(MessageHandler(filters.TEXT & filters.Regex(r'^Доп\. услуги$') & ~filters.COMMAND, handle_other_categories))
 
     # Добавляем сам ConversationHandler
     application.add_handler(order_conv_handler)
