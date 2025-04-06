@@ -1794,3 +1794,6 @@ telegram.error.Conflict: Conflict: can't use getUpdates method while webhook is 
 2025-04-06 13:53:37,852 - root - INFO - Handlers configured with ConversationHandler for orders.
 2025-04-06 13:53:37,852 - root - INFO - Запуск polling...
 2025-04-06 13:53:38,617 - telegram.ext.Application - INFO - Application started
+2025-04-06 14:04:22,306 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-04-06 14:04:22,306 - telegram.ext.Application - INFO - Application.stop() complete
+2025-04-06 14:04:22,308 - root - INFO - Бот остановлен.
