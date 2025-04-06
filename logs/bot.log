@@ -1732,3 +1732,29 @@ telegram.error.Conflict: Conflict: can't use getUpdates method while webhook is 
 2025-04-05 07:50:50,142 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
 2025-04-05 07:50:50,142 - telegram.ext.Application - INFO - Application.stop() complete
 2025-04-05 07:50:50,143 - root - INFO - Бот остановлен.
+2025-04-05 07:57:51,358 - root - INFO - База данных успешно инициализирована
+2025-04-05 07:57:51,390 - root - INFO - Handlers configured with ConversationHandler for orders.
+2025-04-05 07:57:51,390 - root - INFO - Запуск polling...
+2025-04-05 07:57:52,148 - telegram.ext.Application - INFO - Application started
+2025-04-05 07:58:13,895 - root - INFO - User 529437081 starts order process selecting 'Базовые работы'.
+2025-04-05 07:58:15,350 - root - INFO - User 529437081 selected base work: Скетч
+2025-04-05 07:58:19,436 - root - INFO - User 529437081 selected format: Халфбоди
+2025-04-05 07:58:21,584 - root - INFO - User 529437081 finishing extras selection with action: 'Готово (без доп. услуг)'.
+2025-04-05 07:58:21,584 - root - INFO - Order details for user 529437081: Base='Скетч', Format='Халфбоди', Extras='Нет'
+2025-04-05 07:58:21,636 - root - INFO - Заказ 1 от user_id 529437081 добавлен в БД.
+2025-04-05 07:58:21,857 - root - INFO - Notification for order 1 sent to artist 5940901732.
+2025-04-05 07:58:37,745 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-04-05 07:58:37,745 - telegram.ext.Application - INFO - Application.stop() complete
+2025-04-05 07:58:37,746 - root - INFO - Бот остановлен.
+2025-04-06 13:33:57,510 - root - INFO - База данных успешно инициализирована
+2025-04-06 13:33:57,546 - root - INFO - Handlers configured with ConversationHandler for orders.
+2025-04-06 13:33:57,546 - root - INFO - Запуск polling...
+2025-04-06 13:33:58,333 - telegram.ext.Application - INFO - Application started
+2025-04-06 13:34:06,036 - root - INFO - User 529437081 starts order process selecting 'Базовые работы'.
+2025-04-06 13:34:09,713 - root - INFO - User 529437081 selected base work: Скетч
+2025-04-06 13:34:12,118 - root - INFO - User 529437081 selected format: Портрет
+2025-04-06 13:34:13,994 - root - INFO - User 529437081 added extra: Срочный заказ
+2025-04-06 13:34:17,014 - root - INFO - User 529437081 finishing extras selection with action: 'Завершить выбор допов'.
+2025-04-06 13:34:17,014 - root - INFO - Order details for user 529437081: Base='Скетч', Format='Портрет', Extras='Срочный заказ'
+2025-04-06 13:34:17,120 - root - INFO - Заказ 1 от user_id 529437081 добавлен в БД.
+2025-04-06 13:34:17,364 - root - INFO - Notification for order 1 sent to artist 5940901732.
