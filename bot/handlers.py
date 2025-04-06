@@ -67,7 +67,7 @@ PAYMENT_INFO = """
 На данный момент доступна оплата:
 1. Бусти = https://boosty.to/murchalo/donate
 2. Перевод на карту = `4400430025822211`
-   {Имя} = "Abdrahmanova Yasmin"
+Фамилия и Имя = "Abdrahmanova Yasmin"
 """
 
 # --- Состояния для ConversationHandler ---
