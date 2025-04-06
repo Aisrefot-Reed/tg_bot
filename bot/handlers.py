@@ -286,9 +286,12 @@ async def cancel_order(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Отправляет приветственное сообщение."""
+    logging.info("Starting conversation with user %s", update.effective_user.id)
+    keyboard = create_main_keyboard()
+    logging.info("Created keyboard with buttons: %s", keyboard.keyboard)
     await update.message.reply_text(
         WELCOME_MESSAGE,
-        reply_markup=create_main_keyboard(),
+        reply_markup=keyboard,
         parse_mode='Markdown'
     )
 
