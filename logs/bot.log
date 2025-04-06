@@ -1758,3 +1758,39 @@ telegram.error.Conflict: Conflict: can't use getUpdates method while webhook is 
 2025-04-06 13:34:17,014 - root - INFO - Order details for user 529437081: Base='Скетч', Format='Портрет', Extras='Срочный заказ'
 2025-04-06 13:34:17,120 - root - INFO - Заказ 1 от user_id 529437081 добавлен в БД.
 2025-04-06 13:34:17,364 - root - INFO - Notification for order 1 sent to artist 5940901732.
+2025-04-06 13:37:35,912 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-04-06 13:37:35,913 - telegram.ext.Application - INFO - Application.stop() complete
+2025-04-06 13:37:35,914 - root - INFO - Бот остановлен.
+2025-04-06 13:37:37,174 - root - INFO - База данных успешно инициализирована
+2025-04-06 13:37:37,210 - root - INFO - Handlers configured with ConversationHandler for orders.
+2025-04-06 13:37:37,210 - root - INFO - Запуск polling...
+2025-04-06 13:37:37,993 - telegram.ext.Application - INFO - Application started
+2025-04-06 13:37:42,658 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-04-06 13:37:42,659 - telegram.ext.Application - INFO - Application.stop() complete
+2025-04-06 13:37:42,660 - root - INFO - Бот остановлен.
+2025-04-06 13:37:44,588 - root - INFO - База данных успешно инициализирована
+2025-04-06 13:37:44,607 - root - INFO - Handlers configured with ConversationHandler for orders.
+2025-04-06 13:37:44,607 - root - INFO - Запуск polling...
+2025-04-06 13:37:45,339 - telegram.ext.Application - INFO - Application started
+2025-04-06 13:37:53,537 - root - INFO - User 529437081 starts order process selecting 'Базовые работы'.
+2025-04-06 13:37:54,894 - root - INFO - User 529437081 selected base work: Скетч
+2025-04-06 13:37:56,179 - root - INFO - User 529437081 selected format: Фуллбоди
+2025-04-06 13:37:57,855 - root - INFO - User 529437081 added extra: Срочный заказ
+2025-04-06 13:37:59,677 - root - INFO - User 529437081 finishing extras selection with action: 'Завершить выбор допов'.
+2025-04-06 13:37:59,677 - root - INFO - Order details for user 529437081: Base='Скетч', Format='Фуллбоди', Extras='Срочный заказ'
+2025-04-06 13:37:59,736 - root - INFO - Заказ 1 от user_id 529437081 добавлен в БД.
+2025-04-06 13:37:59,968 - root - INFO - Notification for order 1 sent to artist 5940901732.
+2025-04-06 13:47:32,075 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-04-06 13:47:32,075 - telegram.ext.Application - INFO - Application.stop() complete
+2025-04-06 13:47:32,076 - root - INFO - Бот остановлен.
+2025-04-06 13:47:33,823 - root - INFO - База данных успешно инициализирована
+2025-04-06 13:47:33,842 - root - INFO - Handlers configured with ConversationHandler for orders.
+2025-04-06 13:47:33,842 - root - INFO - Запуск polling...
+2025-04-06 13:47:34,602 - telegram.ext.Application - INFO - Application started
+2025-04-06 13:53:36,064 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-04-06 13:53:36,064 - telegram.ext.Application - INFO - Application.stop() complete
+2025-04-06 13:53:36,065 - root - INFO - Бот остановлен.
+2025-04-06 13:53:37,826 - root - INFO - База данных успешно инициализирована
+2025-04-06 13:53:37,852 - root - INFO - Handlers configured with ConversationHandler for orders.
+2025-04-06 13:53:37,852 - root - INFO - Запуск polling...
+2025-04-06 13:53:38,617 - telegram.ext.Application - INFO - Application started
