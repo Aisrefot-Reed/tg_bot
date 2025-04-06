@@ -245,7 +245,12 @@ async def finish_extras(update: Update, context: ContextTypes.DEFAULT_TYPE) -> i
             logging.info(f"Notification for order {order_id} sent to artist {ARTIST_CHAT_ID}.")
             # 3. Уведомляем пользователя
             await update.message.reply_text(
-                f"✅ Ваш заказ (ID: {order_id}) успешно создан и отправлен художнику! Ожидайте ответа.",
+                f"✅ Ваш заказ (ID: {order_id}) успешно создан и отправлен художнику! Ожидайте ответа."
+            )
+            # Отправляем информацию об оплате
+            await update.message.reply_text(
+                PAYMENT_INFO,
+                parse_mode='Markdown',
                 reply_markup=create_main_keyboard() # Возвращаем главную клавиатуру
             )
         except Exception as e:
